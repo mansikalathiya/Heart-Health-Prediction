@@ -1,17 +1,41 @@
-# Dataset Information:
-The dataset consists of 303 rows and 14 columns with label Target. Data contains categorical as well as continuous data.
-# Data Cleansing: 
-There is only one column that contains null value in which only two rows have null value that can easily be dropped by removing NA function.
-# Data Visualization:
-Data Visualization is done by step by step process with critical analysis I use correlation matrix to find most dependent variable to the label which is Age. I plot graph of label (Target) to show the ratio of heart Disease.
-# Methodology: 
-To explain and identify the problem and resolve medical objectives, diﬀerent data Science technique, which interpret the medical goals, have been implemented to diagnose the heart disease and to improve the success standards of the algorithms for prediction. Suitable machine learning algorithms, like: Random Forest, SVM (Support Vector Machine), Decision Tree and Logistics Regression were preferred for the training and implementation in python for developing and evolving the predictive model. These algorithms executed on the model will help medical experts to predict and diagnose heart attacks in the patient dataset. The main goal is to identify which machine-learning algorithm has the best accuracy for the prediction of heart disease from the patient dataset.
-# Result:
-Cross Validation is also done for all the models. The results are same but have some variance in accuracy. After Cross Validation the result become clear that Logistic regression is good for this problem
+# Heart Disease Prediction using Machine Learning
 
-# Installation Guide:
-->Install Anaconda Destribution <br>
-->Install Jupyter Notebook <br>
-->Copy Heart Health.ipynb to path C:\Users\xyz along with heart.csv <br>
-->Run Jupyter Notebook and open file from its home page <br>
-->Change the path of read_csv() as your file location <br>
+This project aims to predict heart disease using machine learning algorithms based on patient medical data. The predictive model is built to assist medical professionals in diagnosing the risk of heart disease and improve early detection outcomes.
+
+## 📊 Dataset Information
+- **Rows**: 303  
+- **Columns**: 14 (including the target label `Target`)  
+- **Data Types**: A mix of categorical and continuous variables  
+- **Target Variable**: `Target` (1 = Disease, 0 = No Disease)
+
+## 🧹 Data Cleansing
+- Only one column contained null values.
+- Two rows had missing data and were removed using the `dropna()` function, as the loss was minimal and did not affect model performance.
+
+## 📈 Data Visualization
+- A **correlation matrix** was used to identify the most influential features.
+- **Age** was found to be most strongly correlated with the presence of heart disease.
+- Graphs and plots were generated to show class distribution and feature importance for the label (`Target`), helping to understand the imbalance and trends in the dataset.
+
+## 🔍 Methodology
+To interpret and resolve the medical objectives, multiple data science techniques and machine learning algorithms were implemented, including:
+
+- **Random Forest**
+- **Support Vector Machine (SVM)**
+- **Decision Tree**
+- **Logistic Regression**
+
+Each model was trained using the preprocessed dataset. The goal was to determine the most accurate algorithm for predicting heart disease.
+
+## ✅ Results
+- **Cross-validation** was performed to ensure robustness and avoid overfitting.
+- All models showed relatively similar performance with slight variation.
+- **Logistic Regression** outperformed other models in terms of accuracy and consistency, making it the preferred choice for this prediction task.
+
+## 🛠 Installation Guide
+
+1. Install **Anaconda Distribution**  
+2. Launch **Jupyter Notebook**  
+3. Clone or download this repository:
+   ```bash
+   git clone https://github.com/mansikalathiya/Heart-Health-Prediction.git
